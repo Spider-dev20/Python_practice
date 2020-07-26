@@ -1,0 +1,7 @@
+print(self.dollars, self.cents)
+
+
+transfer = PiggyBank(1, 2)
+
+
+transfer.add_money(500, 98)
