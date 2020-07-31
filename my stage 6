@@ -1,0 +1,28 @@
+class CoffeeMachine:
+    espresso = {'water': 250, 'milk': 0, 'coffee': 16, 'money': 4}
+    latte = {'water': 350, 'milk': 75, 'coffee': 20, 'money': 7}
+    cappuccino = {'water': 200, 'milk': 100, 'coffee': 12, 'money': 6}
+    menu = {1: espresso, 2: latte, 3:cappuccino}
+
+    def __init__(self):
+        self.amount_water = 400
+        self.amount_milk = 540
+        self.amount_beans = 120
+        self.amount_disposable_cups = 9
+        self.amount_money = 550
+
+    def __repr__(self):
+        return "CoffeeMachine ({}, {}, {}, {}, {})".format(self.amount_water, self.amount_milk, self.amount_beans, self.amount_disposable_cups, self.amount_money)
+
+    def buy(self, menu):
+
+        self.amount_water -= number
+        return self.amount_water
+
+
+amounts = CoffeeMachine()
+
+
+print(amounts.calculation(3))
+
+print(repr(amounts))
